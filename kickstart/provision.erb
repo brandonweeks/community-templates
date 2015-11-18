@@ -98,7 +98,7 @@ bootloader --location=mbr --append="<%= @host.params['bootloader-append'] || 'no
 text
 reboot
 
-%packages
+%packages --nobase
 yum
 dhclient
 ntp
